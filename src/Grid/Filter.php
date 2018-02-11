@@ -150,6 +150,7 @@ class Filter
         $params = [];
 
         foreach ($inputs as $key => $value) {
+            $value = trim($value);
             array_set($params, $key, $value);
         }
 
